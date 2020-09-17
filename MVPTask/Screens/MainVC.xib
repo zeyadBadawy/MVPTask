@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC" customModule="MVPTask" customModuleProvider="target">
+            <connections>
+                <outlet property="breadTF" destination="0VW-rm-XxR" id="PPD-30-p00"/>
+                <outlet property="dogImageView" destination="Csb-79-EV1" id="aQ9-Mk-09f"/>
+                <outlet property="getDogButton" destination="R2K-3t-ziQ" id="dRS-zE-XcQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Csb-79-EV1">
+                    <rect key="frame" x="82" y="94" width="250" height="250"/>
+                    <color key="backgroundColor" red="0.14117647059999999" green="0.6588235294" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="ty8-6h-1DY"/>
+                        <constraint firstAttribute="width" constant="250" id="wpE-c2-P6D"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2K-3t-ziQ">
+                    <rect key="frame" x="132" y="454" width="150" height="44"/>
+                    <color key="backgroundColor" red="0.29396998880000003" green="0.55609571930000001" blue="0.6598522067" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="DpX-2S-t0Z"/>
+                        <constraint firstAttribute="height" constant="44" id="Pbs-Xn-ICf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                    <state key="normal" title="Get New Dog">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="getNewDogButtonTapped:" destination="-1" eventType="touchUpInside" id="dMa-f9-TiL"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="hound" borderStyle="roundedRect" placeholder="ex: hound" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0VW-rm-XxR">
+                    <rect key="frame" x="132" y="400" width="150" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="bKB-47-JyP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Breed Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHP-Pq-7dF">
+                    <rect key="frame" x="131.5" y="356" width="151" height="24"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="0VW-rm-XxR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5ON-AW-e96"/>
+                <constraint firstItem="IHP-Pq-7dF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5mL-c6-ebM"/>
+                <constraint firstItem="Csb-79-EV1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="9Kb-cL-flE"/>
+                <constraint firstItem="0VW-rm-XxR" firstAttribute="top" secondItem="IHP-Pq-7dF" secondAttribute="bottom" constant="20" id="Vyh-Li-jYg"/>
+                <constraint firstItem="Csb-79-EV1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eNZ-Ax-uAq"/>
+                <constraint firstItem="IHP-Pq-7dF" firstAttribute="top" secondItem="Csb-79-EV1" secondAttribute="bottom" constant="12" id="nTY-oJ-F7r"/>
+                <constraint firstItem="R2K-3t-ziQ" firstAttribute="top" secondItem="0VW-rm-XxR" secondAttribute="bottom" constant="20" id="rFn-KB-JmK"/>
+                <constraint firstItem="R2K-3t-ziQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="w1B-lD-Lbu"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="141.96428571428569"/>
+        </view>
+    </objects>
+</document>
